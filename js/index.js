@@ -77,14 +77,14 @@ middleImg.src = `img/mid-page-accent.jpg`;
 // CTA SECTION
 
 const ctaTitle = document.querySelector(`h1`);
-ctaTitle.textContent = 'DOM \n Is \n Awesome';
+ctaTitle.textContent = 'DOM Is Awesome';
 
 const button = document.querySelector(`button`);
 button.textContent = `Get Started`;
 
 // CONTENT TITLES
 
-const contentTitle = document.getElementsByTagName(`h4`);
+const contentTitle = document.querySelectorAll(`h4`);
 contentTitle[0].textContent = `Features`;
 contentTitle[1].textContent = `About`;
 contentTitle[2].textContent = `Services`;
@@ -100,7 +100,7 @@ contentParagraph[1].textContent = `About content elementum magna eros, ac posuer
 contentParagraph[2].textContent = `Services content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.`;
 contentParagraph[3].textContent = `Product content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.`;
 contentParagraph[4].textContent = `Vision content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.`;
-contentParagraph[5].textContent = `123 Way 456 \n Street Somewhere, USA`;
+contentParagraph[5].textContent = `123 Way 456 Street Somewhere, USA`;
 contentParagraph[6].textContent = `1 (888) 888-8888`;
 contentParagraph[7].textContent = `sales@greatidea.io`;
 contentParagraph[8].textContent = `Copyright Great Idea! 2018`;
