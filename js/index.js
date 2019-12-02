@@ -42,6 +42,7 @@ let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"]);
 
 // NAVIGATION
+
 const links = document.getElementsByTagName(`a`);
 links[0].textContent = `Services`;
 links[1].textContent = `Product`;
