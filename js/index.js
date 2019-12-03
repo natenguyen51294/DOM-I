@@ -44,12 +44,12 @@ logo.setAttribute('src', siteContent["nav"]["img-src"]);
 // NAVIGATION
 
 const links = document.getElementsByTagName(`a`);
-links[0].textContent = `Services`;
-links[1].textContent = `Product`;
-links[2].textContent = `Vision`;
-links[3].textContent = `Features`;
-links[4].textContent = `About`;
-links[5].textContent = `Contact`;
+links[0].textContent = siteContent["nav"]["nav-item-1"];
+links[1].textContent = siteContent["nav"]["nav-item-2"];
+links[2].textContent = siteContent["nav"]["nav-item-3"];
+links[3].textContent = siteContent["nav"]["nav-item-4"];
+links[4].textContent = siteContent["nav"]["nav-item-5"];
+links[5].textContent = siteContent["nav"]["nav-item-6"];
 Array.from(links).forEach((a) => {
   a.style.color = `green`;
 })
@@ -69,38 +69,38 @@ parentElement.append(newLinkSecond);
 // IMAGES
 
 const ctaImage = document.querySelector(`#cta-img`);
-ctaImage.src = `img/header-img.png`;
+ctaImage.src = siteContent["cta"]["img-src"];
 
 const middleImg = document.querySelector(`#middle-img`);
-middleImg.src = `img/mid-page-accent.jpg`;
+middleImg.src = siteContent["main-content"]["middle-img-src"];
 
 // CTA SECTION
 
 const ctaTitle = document.querySelector(`h1`);
-ctaTitle.textContent = 'DOM Is Awesome';
+ctaTitle.textContent = siteContent["cta"]["h1"];
 
 const button = document.querySelector(`button`);
-button.textContent = `Get Started`;
+button.textContent = siteContent["cta"]["button"];
 
 // CONTENT TITLES
 
 const contentTitle = document.querySelectorAll(`h4`);
-contentTitle[0].textContent = `Features`;
-contentTitle[1].textContent = `About`;
-contentTitle[2].textContent = `Services`;
-contentTitle[3].textContent = `Product`;
-contentTitle[4].textContent = `Vision`;
-contentTitle[5].textContent = `Contact`;
+contentTitle[0].textContent = siteContent["main-content"]["features-h4"];
+contentTitle[1].textContent = siteContent["main-content"]["about-h4"];
+contentTitle[2].textContent = siteContent["main-content"]["services-h4"];
+contentTitle[3].textContent = siteContent["main-content"]["product-h4"];
+contentTitle[4].textContent = siteContent["main-content"]["vision-h4"];
+contentTitle[5].textContent = siteContent["contact"]["contact-h4"];
 
 // CONTENT PARAGRAPH
 
 const contentParagraph = document.getElementsByTagName(`p`);
-contentParagraph[0].textContent = `Features content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.`;
-contentParagraph[1].textContent = `About content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.`;
-contentParagraph[2].textContent = `Services content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.`;
-contentParagraph[3].textContent = `Product content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.`;
-contentParagraph[4].textContent = `Vision content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.`;
-contentParagraph[5].textContent = `123 Way 456 Street Somewhere, USA`;
-contentParagraph[6].textContent = `1 (888) 888-8888`;
-contentParagraph[7].textContent = `sales@greatidea.io`;
-contentParagraph[8].textContent = `Copyright Great Idea! 2018`;
+contentParagraph[0].textContent = siteContent["main-content"]["features-content"];
+contentParagraph[1].textContent = siteContent["main-content"]["about-content"];
+contentParagraph[2].textContent = siteContent["main-content"]["services-content"];
+contentParagraph[3].textContent = siteContent["main-content"]["product-content"];
+contentParagraph[4].textContent = siteContent["main-content"]["vision-content"];
+contentParagraph[5].textContent = siteContent["contact"]["address"];
+contentParagraph[6].textContent = siteContent["contact"]["phone"];
+contentParagraph[7].textContent = siteContent["contact"]["email"];
+contentParagraph[8].textContent = siteContent["footer"]["copyright"];
